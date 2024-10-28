@@ -70,7 +70,7 @@ function create() {
             mood = "create";
             submit.innerHTML="create"
             count.style.display="block"
-           
+          
 
         }
         clearData()
