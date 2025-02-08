@@ -98,3 +98,29 @@ table th,td{
 #deleteAll{
     margin: 20px 0;
 }
+
+@media(max-width:780px){
+
+  .head h2{
+    font-size: 22px;
+  }
+
+  .head p{
+    font-size: 16px;
+  }
+
+  input{
+    width: 100% !important;
+    margin: 10px auto 0;
+  }
+  #total ,#submit{
+    margin-top: 10px;
+    display: block;
+  }
+  #search{
+    margin-bottom: 10px;
+  }
+  .outputs{
+    overflow-x: scroll;
+  }
+}

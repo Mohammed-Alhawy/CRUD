@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/download.jpg" type="image/x-icon">
     <title>CRUD</title>
 </head>
 <body>
@@ -14,6 +15,7 @@
        </div>
 
        <div class="inputs">
+
         <input type="text" id="title" placeholder="title">
         <div class="price">
             <input type="number" id="price" placeholder="price">
@@ -25,19 +27,29 @@
         <input type="number" id="count" placeholder="count">
         <input type="text" id="category" placeholder="category">
         <button id="submit">create</button>
+        <div class="searchblock">
+          <input  onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
+          <div class="btnSearch">
+              <button onclick="getSearchMood(this.id)" id="searchTitle"> search by title </button>
+              <button onclick="getSearchMood(this.id)" id="searchCategory"> search by category </button>
+          </div>
+      </div>
       </div>
 
       <div class="outputs">
-        <div class="searchblock">
+
+        <!-- <div class="searchblock">
             <input  onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
             <div class="btnSearch">
                 <button onclick="getSearchMood(this.id)" id="searchTitle"> search by title </button>
                 <button onclick="getSearchMood(this.id)" id="searchCategory"> search by category </button>
             </div>
-        </div>
+        </div> -->
+
         <div id="deleteAll">
 
         </div>
+
         <table>
             <tr>
                 <th> id </th>
@@ -53,7 +65,8 @@
             </tr>
             <tbody id="tbody"> </tbody>
         </table>
-       </div>
+
+      </div>
 
     </div>
 
